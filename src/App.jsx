@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 import ProductList from './components/ProductList'
 import DarkModeToggle from './components/DarkModeToggle'
 import Cart from './components/Cart'
+import createTypography from '@mui/material/styles/createTypography'
 
 const App = () => {
   // TODO: Implement state for dark mode toggle
-
-  // TODO: Implement state for cart management
-
-  // TODO: Implement state for category filtering
-
+  const [darkMode, setDarkmode] = useState(false);
+// TODO: Implement state for cart management
+  const [cart, setCart] = useState([]);
+ // TODO: Implement state for category filtering
+  const [category, setCategory] =useState("All");
+  
   return (
     <div>
       <h1>🛒 Shopping App</h1>
