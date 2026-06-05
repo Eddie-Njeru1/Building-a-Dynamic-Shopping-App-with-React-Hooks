@@ -10,6 +10,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [category, setCategory] =useState("All");
   
+  
   return (
     <div>
       <h1>🛒 Shopping App</h1>
